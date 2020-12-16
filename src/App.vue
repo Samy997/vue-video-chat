@@ -65,10 +65,10 @@ export default {
             .collection('attendees')
             .doc(this.user.uid)
             .set({
-              displayName: this.displayName,
-              createdAt: this.Firebase.firestore.FieldValue.FieldValue.serverTimestamp()
+              displayName: payload.displayName,
+              createdAt: Firebase.firestore.FieldValue.serverTimestamp()
             })
-            .then(() => this.$router.push('/'));
+            .then(() => this.$router.push(`/chat/${payload.hostID}/${payload.roomID}`));
         }
       });
     }

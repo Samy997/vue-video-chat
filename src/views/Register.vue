@@ -101,7 +101,7 @@ export default {
                 .updateProfile({
                   displayName: info.displayName
                 })
-                .then(() => this.$router.replace('/'));
+                .then(() => this.$router.replace('/rooms'));
             },
             error => {
               this.error = error.message;

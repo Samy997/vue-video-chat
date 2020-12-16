@@ -42,7 +42,7 @@
             <span
               class="mr-2"
               :class="[attendee.webRTCID ? 'text-success' : 'text-secondary']"
-              title="On Air"
+              title="Broadcasting"
             >
               <font-awesome-icon icon="podcast"></font-awesome-icon>
             </span>
