@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/video-chat/'
+  publicPath: '/vue-video-chat/'
 };
